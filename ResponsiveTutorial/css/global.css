@@ -1,0 +1,62 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Text */
+
+.text-center {
+  text-align: center;
+}
+
+.heading-small {
+  font-size: 1.25rem;
+}
+
+.heading-medium {
+  font-size: 1.5rem;
+}
+
+.heading-big {
+  font-size: 1.75rem;
+}
+
+/* buttons */
+
+.btn {
+  margin-top: 1.25rem;
+  padding: 0.8rem 3rem;
+  border-radius: 7px;
+  letter-spacing: 0.5px;
+}
+
+.btn-info {
+  margin-top: 1.25rem;
+  padding: 0.8rem 3rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background: #336ea2;
+}
+
+.btn-primary:hover {
+  color: #336ea2;
+  background: white;
+  border: 0.5px solid #336ea2;
+}
+
+.btn-dark {
+  background: #062e51;
+}
+
+.btn-dark:hover {
+  color: #062e51;
+  background: white;
+  border: 0.5px solid #062e51;
+}
+
+.btn-block {
+  width: 100%;
+  text-align: center;
+}

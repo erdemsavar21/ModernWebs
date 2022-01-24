@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+
+        .para1::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+
+        .para1::first-line{
+            color: sandybrown;
+        }
+
+        .para1::after{
+            /* content: "Paragraf sonrasi"; */
+            content: url("./images/pexels-fauxels-3184397.jpg");
+
+        }
+
+        .para1::before{
+            content: "Paragraf öncesi";
+        }
+    </style>
+</head>
+<body>
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est quis, sunt illum velit aut. Doloremque, voluptas et! Quidem dignissimos, fugit necessitatibus beatae accusantium, suscipit, enim error iste nesciunt repellat facere accusamus modi quae molestias nostrum! Veritatis, harum iure ab animi distinctio architecto modi exercitationem minus iste quod est nam facere temporibus tempora natus in amet, totam earum nihil dolore officiis libero! Repudiandae obcaecati illum corrupti, deserunt voluptas corporis, modi, omnis praesentium blanditiis ipsam mollitia! Harum eaque neque sequi laborum veritatis officiis velit iusto ad, numquam laboriosam, consequuntur a exercitationem magni rerum nam quo tenetur itaque similique est placeat adipisci.
+    </p>
+</body>
+</html>

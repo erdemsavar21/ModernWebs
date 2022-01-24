@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .card {
+        width: 40%;
+        margin: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        transition: box-shadow 1s;
+        -webkit-transition: box-shadow 1s;
+      }
+
+      .card-image {
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: opacity 200ms ease;
+        -webkit-transition: opacity 200ms ease;
+      }
+
+      .card-image:hover {
+          opacity: 0.7;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+      }
+
+      .card-body {
+        padding: 10px 16px;
+      }
+
+      .card-title {
+          margin-bottom: 15px;
+          font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="./images/pexels-fauxels-3184397.jpg"
+        alt=""
+        class="card-image"
+      />
+      <div class="card-body">
+        <h4 class="card-title">Card Title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+          delectus itaque vel temporibus dignissimos libero corrupti alias
+          possimus consectetur provident.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+          width: 150px;
+          height: 150px;
+          background: greenyellow;
+          transition: width 2s,height 2s,background 1s;
+          /* transition-timing-function: ease-in; hizlanarak ivmelenir */
+          transition-delay: 1s;
+      }
+
+      .card:hover {
+          width: 250px;
+          height: 250px;
+          background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card"></div>
+  </body>
+</html>

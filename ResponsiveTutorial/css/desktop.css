@@ -1,0 +1,17 @@
+html {
+  font-size: 1.5rem;
+}
+
+#section-b ul {
+  display: flex;
+}
+
+#section-b li {
+  padding: 1rem;
+}
+
+#section-d .container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}

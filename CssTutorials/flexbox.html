@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /*y eksenine göre hizalar*/
+        align-items: center; /*x eksenine göre hizalar*/
+        flex-wrap: wrap; /*box larin width ini degistirmeden yenin satira devam etmesini saglar aksi halde hepsi ayni satirda kalir*/
+        min-height: 600px;
+        background: black;
+      }
+
+      .container2 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap; /*box larin width ini degistirmeden yenin satira devam etmesini saglar aksi halde hepsi ayni satirda kalir*/
+        min-height: 600px;
+        background: black;
+      }
+
+      .box {
+        text-align: center;
+        background-color: #f2f2f2;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      .box1{
+          order: 3;
+          background: red;
+          flex: 1;
+      }
+      .box2{
+          order: 2;
+          background: blue;
+          align-self: flex-start;
+          flex: 3;
+      }
+      .box3{
+          order: 1;
+          background: green;
+          
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <h1>Article 2</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <h1>Article 3</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="box">
+        <h1>Article 4</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <h1>Article 5</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <h1>Article 6</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="container2">
+        <div class="box box1"></div>    
+        <div class="box box2"></div>    
+        <div class="box box3"></div>    
+    </div>
+  </body>
+</html>

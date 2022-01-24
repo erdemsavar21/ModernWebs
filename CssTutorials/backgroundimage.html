@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Original Surfer", cursive;
+      }
+      .header {
+        height: 55vh;
+        background-image: linear-gradient(
+            rgba(230, 255, 230, 0.3),
+            rgba(230, 255, 230, 0.7)
+          ),
+          url(images/pexels-leah-kelley-3935702.jpg);
+        background-size: cover;
+        background-position: center;
+        /* clip-path: polygon(0 0,100% 0,100% 80%,0 80%); Kirpma isleme yapar */
+        position: relative;
+      }
+      .heading {
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        /* transform nesnelerin harekitini saglar yukarida verdigimiz top ve left degeri nesnenin baslangicini hedef alir nesneyi genisliginin ve boyunun yuzde 50 si kadar geri cekersek tam ortaliriz */
+        transform: translate(-50%,-50%);
+      }
+      .heading-main {
+        font-size: 3rem;
+        display: block;
+      }
+
+      .heading-sub {
+        font-size: 2rem;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading">
+        <span class="heading-main"> Main Heading Title </span>
+        <span class="heading-sub"> Sub Title </span>
+      </h1>
+    </header>
+  </body>
+</html>

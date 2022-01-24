@@ -1,0 +1,53 @@
+h1,
+p {
+  color: blueviolet;
+  background-color: cornsilk;
+  font-style: italic;
+}
+/*Id ye göre*/
+#logo {
+  color: crimson;
+}
+
+/*Class'a göre-- important stilin ezilmemesini yani sonradan baska color verilirse bunun gecerli olmasini belirtir*/
+
+.info {
+  color: darkgreen !important;
+  background-color: darkgrey;
+}
+
+/*ID veya Class'a göre hepsini uygular*/
+#logo,.info {
+  color: darkorange;
+}
+
+/*Sadece ID ve Class'i bu olan*/
+#logo.info {
+    color: darkorange;
+  }
+
+.lead{
+   font-style: oblique; 
+}
+
+
+a{
+    text-decoration: none; /*Alti cizgiyi kaldirir*/
+    /* color: inherit; normalde a selektörü bir üst klasdan miras almaz ama bu sekilde dersek üst sekeltörlerinden miras alabilir */
+}
+
+/*Sadece ul li altinda olan linkler icin*/
+ul li a{
+    color: red;
+}
+
+/*Classi info olanlarin icerisnde bulunan spanlari etkiler*/
+.info span{
+color: royalblue;
+}
+
+/*Tüm selectors etkilemek icin*/
+*{
+font-size: 20px;
+
+}

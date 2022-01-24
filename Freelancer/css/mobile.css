@@ -1,0 +1,36 @@
+html {
+  font-size: 6px;
+}
+
+.container{
+    max-width: 540px;
+}
+
+#portfolio-images .col {
+  width: 100%;
+}
+
+#about .about-text {
+  display: block;
+}
+
+#footer .col {
+  width: 100%;
+}
+
+.star::after {
+  padding: 0 2rem;
+  top: -18px;
+}
+
+#navbar .nav-icon {
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 25px;
+  font-size: 3rem;
+}
+
+
+
+

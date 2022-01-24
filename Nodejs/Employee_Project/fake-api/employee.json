@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "name": "Erdem Savar",
+      "department": "Teknik",
+      "salary": 3700,
+      "id": 4
+    },
+    {
+      "name": "Umut Savar",
+      "department": "Kinder",
+      "salary": 4550,
+      "id": 5
+    },
+    {
+      "name": "Sinem Savar",
+      "department": "Pisko",
+      "salary": 1000,
+      "id": 6
+    }
+  ]
+}

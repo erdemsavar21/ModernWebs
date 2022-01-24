@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+/* Navbar */
+
+#navbar {
+  font-family: "Montserrat", sans-serif;
+  background: #31455d;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  /* position fix oldugu icin asagidan yapacak tasmalari engellemek icin cok yuksek z-index veriyoruz */
+  z-index: 500;
+}
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+#navbar #logo-box .logo {
+  font-weight: 700;
+  font-size: 3.2rem;
+  
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#navbar ul li {
+  padding-left: 3rem;
+}
+
+
+
+#navbar ul li a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+  color: #18bc9c;
+}
+
+#navbar .nav-icon{
+  display: none;
+}
+
+
+
+/* Header */
+
+#home {
+  background-color: #18bc9c;
+  padding-top: calc(106px + 5rem);
+  padding-bottom: 106px;
+  text-align: center;
+}
+
+#home .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+#home h1 {
+  color: #fff;
+  font-size: 7.6rem;
+}
+
+#home h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+/* Portfolio */
+
+#portfolio {
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 4.8rem;
+  color: #2c3e50;
+}
+
+#portfolio-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#portfolio-images .col {
+  width: 33.3%;
+  padding: 1rem;
+}
+
+#portfolio-images .portfolio-item {
+  position: relative;
+}
+
+#portfolio-images .col .img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+#portfolio-images .col .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #18bc9c;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#portfolio-images .col .img-overlay .icon {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#portfolio-images .portfolio-item:hover .img-overlay {
+  opacity: 0.8;
+}
+
+#about {
+  background-color: #18bc9c;
+  color: #fff;
+
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 4.8rem;
+}
+
+#about .about-text {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 2rem;
+}
+
+#about .col {
+  text-align: left;
+  padding: 5rem;
+}
+
+/* Contact */
+
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 4.8rem;
+  color: #2c3e50;
+}
+
+#contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact-form .form-group {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+#contact-form .form-control {
+  border: 0;
+  width: 100%;
+  display: inline-block;
+  resize: none;
+  font-size: 2.4rem;
+}
+
+#contact-form .form-control:focus {
+  outline: 0;
+}
+
+#contact-form button {
+  display: block;
+  text-align: left;
+}
+
+/* Footer */
+
+#footer {
+  padding: 6rem;
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+}
+
+#footer .col {
+  width: 33%;
+  padding: 2rem;
+}
+
+#footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#footer h4 {
+  font-size: 2.4rem;
+}
+
+#footer p {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+#footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#footer ul li {
+  padding: 1rem;
+}
+
+/* CopyRight */
+
+.copyright {
+  background-color: #1a283a;
+  padding: 2.4rem;
+  color: #fff;
+  text-align: center;
+}

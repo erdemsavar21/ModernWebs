@@ -1,0 +1,39 @@
+html {
+  font-size: 8px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.star::after {
+  padding: 0 2rem;
+  top: -24px;
+}
+
+#navbar .container {
+  display: block;
+}
+
+#navbar .nav-icon {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+}
+
+#navbar ul {
+  display: block;
+}
+#navbar ul li {
+  padding: 1rem;
+}
+
+#navbar ul li a {
+  font-size: 2rem;
+}
+
+#nav-links.responsive ul li:not(:first-child) {
+    display: none;
+  }

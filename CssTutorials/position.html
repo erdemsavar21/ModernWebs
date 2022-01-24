@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Position</title>
+    <style>
+      .red {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+
+      .blue {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        /* normalda mavi ön plandayken z yi öne ceker */
+        z-index: -1;
+      }
+
+      .outer {
+        width: 200px;
+        height: 200px;
+        background-color: #a7a7a7;
+        position: relative;
+        margin: 10px;
+      }
+
+      .inner {
+        width: 50px;
+        height: 50px;
+        background-color: brown;
+        /* outer relative verdigimizden absolute ile icinde bulundugu box a göre pozisyon alacaktir */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      body {
+        margin: 0px;
+      }
+
+      .box {
+        width: 20%;
+        height: 200px;
+        float: left;
+      }
+
+      .box1 {
+        background-color: darkblue;
+      }
+      .box2 {
+        background-color: darkred;
+      }
+      .box3 {
+        background-color: darkseagreen;
+      }
+
+      .list li{
+        display: inline-block;
+       width: 150px;
+       list-style: circle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="outer">
+      <div class="inner"></div>
+    </div>
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div style="clear: both"></div>
+    <!-- sag ve solda bosluklari temizler -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      recusandae quos impedit saepe! Tempora optio nesciunt iusto eveniet.
+      Eveniet reiciendis labore odit distinctio amet beatae facilis, itaque
+      recusandae provident porro?
+    </p>
+
+    <ul class="list">
+      <li>Erdem</li>
+      <li>Sinem</li>
+      <li>Umut</li>
+      <li>Adasd</li>
+    </ul>
+  </body>
+</html>

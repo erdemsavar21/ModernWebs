@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p[title] {
+        border: 1px solid gray;
+      }
+
+      p[title="first paragraph"] {
+        background: red;
+      }
+      /* icinde paragraf icerenler */
+      p[title~="paragraph"] {
+        color: royalblue;
+      }
+      /* Http ile baslayan */
+      a[href^="http"] {
+        color: white;
+      }
+
+      /* hem http ile baslayan hem de targeti _blank olan */
+      a[href^="http"][target="_blank"] {
+        color: white;
+      }
+
+      input[type="text"]{
+          background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p title="first paragraph">Deneme</p>
+    <p title="second paragraph">Deneme</p>
+    <input type="text">
+  </body>
+</html>

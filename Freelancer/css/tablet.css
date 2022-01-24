@@ -1,0 +1,21 @@
+html {
+  font-size: 7px;
+}
+
+.container{
+    max-width: 720px;
+}
+
+#portfolio-images .col {
+  width: 50%;
+}
+
+#footer .col {
+  width: 50%;
+}
+
+.star::after {
+    padding: 0 2rem;
+    top: -22px;
+  }
+  

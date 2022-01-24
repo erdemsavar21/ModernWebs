@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #art {
+        display: none;
+      }
+
+      /* min width dersek ekran genisligi 768 gecerse media icerisindeki özellikler dahil olacak  */
+      /* max widht te 768 ten dustugunde tablet veya telefonlarda özellikler devreye girecek */
+      @media (min-width: 768px) {
+        p {
+          display: block;
+        }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        border: 1px solid black;
+        background-color: #a7a7a7;
+        padding: 10px;
+        width: 25%;
+      }
+      /* Tablet te 2 satir telefonlarda tek satiri kapsayacak bir tane box */
+      @media (max-width: 768px) {
+      .box{
+          width: 50%;
+      }
+      }
+      @media (max-width: 500px) {
+      .box{
+          width: 100%;
+      }
+      }
+
+    </style>
+  </head>
+  <body>
+    <p id="art">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, qui.
+    </p>
+    <div class="container">
+      <div class="box">
+        <h1>Aricle1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quo
+          pariatur? Deleniti placeat recusandae eligendi, beatae culpa labore
+          non totam.
+        </p>
+      </div>
+      <div class="box">
+        <h1>Aricle1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quo
+          pariatur? Deleniti placeat recusandae eligendi, beatae culpa labore
+          non totam.
+        </p>
+      </div>
+      <div class="box">
+        <h1>Aricle1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quo
+          pariatur? Deleniti placeat recusandae eligendi, beatae culpa labore
+          non totam.
+        </p>
+      </div>
+      <div class="box">
+        <h1>Aricle1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quo
+          pariatur? Deleniti placeat recusandae eligendi, beatae culpa labore
+          non totam.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

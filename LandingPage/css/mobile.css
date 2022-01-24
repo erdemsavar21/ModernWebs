@@ -1,0 +1,25 @@
+#navbar{
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow: hidden;  /* link hover üzerinde cercevenin tasmasini engeller  */
+    height: 90px;
+}
+
+#training .items{
+    flex-direction: column;
+
+}
+
+#training .items .item{
+    width: 100%;
+}
+
+.courses {
+
+    align-items: center;
+  
+  }
+.courses .course{
+    flex-direction: column;
+}

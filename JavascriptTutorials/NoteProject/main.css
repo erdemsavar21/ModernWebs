@@ -1,0 +1,107 @@
+:root{
+    --main-color: rgba(41, 128, 185,1.0);
+    --main-color-light: rgba(41, 128, 185,0.5);
+    --accent-color: rgba(230, 126, 34,1.0);
+    --accent-color-light: rgba(230, 126, 34,0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+a {
+    text-decoration: none;
+    color: white;
+}
+  
+html {
+    font-family: 'Licorice', cursive;
+}
+
+body{
+    background-image: linear-gradient(to bottom right,var(--main-color-light),var(--main-color));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-title{
+    font-size: 3rem;
+}
+
+.header, .mission-form{
+    min-height: 20vh;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-item{
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+.btn-addMission{
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.btn-addMission:hover{
+    color: whitesmoke;
+    background-color: var(--main-color);
+}
+
+.mission-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-list{
+    list-style: none;
+    min-width: 40%;
+    background-color: whitesmoke;
+}
+
+.mission-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
+
+.mission-define{
+     flex: 1; /*Tüm alana yayilir  */
+     font-size: 1.5rem;
+}
+
+.miss-btn{
+    background-color: var(--accent-color);
+    outline: none;
+    border: none;
+    font-size: .7rem;
+    padding: .5rem;
+    margin: .2rem;
+    cursor: pointer;
+}
+
+.miss-delete{
+    background-color: red;
+}
+
+.miss-finish{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fas{
+   pointer-events: none; 
+}
+
+

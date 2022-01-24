@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .contactform {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .formgroup {
+        padding: 0.25rem;
+      }
+      .form-control {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        resize: none;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+      }
+
+      .form-control:focus {
+        border-color: #80bdff;
+        outline: 0;
+      }
+
+      .btn {
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 7px;
+        text-align: center;
+        background-color: #007bff;
+        border-color: #007bff;
+        color: whitesmoke;
+        border: 1px solid #007bff;
+        font-size: 1.5rem;
+        width: 15%;
+      }
+      .btn:hover {
+          background-color: white;
+          color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contactform">
+
+      <div class="formgroup">
+        <input type="text" class="form-control" name="fullName" />
+      </div>
+      <div class="formgroup">
+        <input type="text" class="form-control" name="email" />
+      </div>
+      <div class="formgroup">
+        <textarea class="form-control" name="message"></textarea>
+      </div>
+      <div class="formgroup">
+        <select name="country" class="form-control">
+          <option value="Tr">Türkiye</option>
+          <option value="Ge">Almanya</option>
+        </select>
+      </div>
+
+      <input type="submit" class="btn" value="Submit" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: rgb(
+          192,
+          209,
+          216
+        ); /*Karisik renk yaratmak icin (Rot Grau Blau)*/
+        opacity: 0.6; /*Bulaniklik degeri*/
+        color: #c0d1d8;
+      }
+
+      .box-1 {
+          background-color: cadetblue;
+          color: white;
+          /* overflow div size sabit verildiginde eger bir tasma oluyorsa scroll acarak bunu engellemeye yarar */
+          overflow: auto; 
+      }
+
+      .box-2{
+          width: 640px;
+          height: 360px;
+          background-image: url("./images/pexels-fauxels-3184397.jpg");
+          background-size: cover; /*genislik ve yükseklige göre boyuutunu ayarlar*/
+          /*background-size: 100px; genislik ve yükseklik vermek icin*/
+          background-repeat: no-repeat;
+          /*fbackground-position: center top; resim kucuk boyutlu ise istedigimiz yere yerlestirebilriiz*/
+          /*background-attachment: fixed; scroll ile hareket etsende resim sabit kalir*/ 
+      }
+       
+      /*Tek seferde de verebiliriz özellikleri*/
+      .box-3{
+        background: url("./images/pexels-fauxels-3184397.jpg") no-repeat center center fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Merhaba</h1>
+    <div class="box-1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        tenetur tempora asperiores fuga molestiae laboriosam repellendus nisi
+        aliquam iure voluptas inventore tempore assumenda. Explicabo at libero
+        adipisci perspiciatis rerum blanditiis reiciendis, exercitationem,
+        repudiandae quidem, sed laudantium. Dicta vero amet inventore labore
+        quasi? Suscipit accusamus reiciendis, ipsa perferendis odit placeat
+        neque vitae doloremque dolore explicabo impedit cum quo tempore rerum
+        sed natus temporibus aut! Distinctio similique odit ab eos architecto.
+        Placeat distinctio mollitia hic dolor ea sapiente dolorum nisi! Vero
+        asperiores culpa provident omnis labore officiis et repellendus sed!
+        Consequuntur laboriosam rem est placeat consectetur quas eius nihil modi
+        quos labore.
+      </p>
+    </div>
+
+    <div class="box-2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod blanditiis ipsum, assumenda ullam iure fugiat dicta fugit, minus provident impedit nemo, a necessitatibus accusamus perspiciatis? Voluptate aperiam nobis nulla magnam asperiores quos atque consequuntur quisquam provident aspernatur, at architecto itaque reprehenderit eum iste dolores alias. Culpa eius consequatur labore placeat!</p>
+    </div>
+  </body>
+</html>

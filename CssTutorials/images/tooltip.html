@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 150px;
+      }
+      .toolTip {
+        position: relative;
+      }
+      .toolText {
+        display: none;
+        width: 120px;
+        background-color: tomato;
+        color: whitesmoke;
+        text-align: center;
+        border-radius: 100%;
+        padding: 10px;
+        position: absolute;
+        /* z index ön plana cikmasini saglar */
+        z-index: 1;
+      }
+
+      .toolTip:hover .toolText {
+        display: inline-block;
+      }
+
+      .top {
+        bottom: 120%;
+        left: 50%;
+        margin-left: -60px;
+      }
+
+      .top::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border: 5px solid;
+        border-color: black transparent transparent transparent;
+      }
+
+      .bottom {
+        top: 120%;
+        left: 50%;
+        margin-left: -60px;
+      }
+
+      .right {
+        left: 101%;
+        bottom: 1%;
+      }
+
+      .left {
+        right: 101%;
+        bottom: 1%;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="toolTip">
+      <span class="toolText top">ToolTip Text</span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. modi corrupti
+      obcaecati iste reiciendis quia dolores placeat beatae error. Amet totam
+      error deleniti magni accusamus aspernatur pariatur qui a.</span
+    >
+    <br />
+    <hr />
+    <br />
+    <span class="toolTip">
+      <span class="toolText right">ToolTip Text</span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. modi corrupti
+      obcaecati iste reiciendis quia dolores placeat beatae error. Amet totam
+      error deleniti magni accusamus aspernatur pariatur qui a.</span
+    >
+    <br />
+    <hr />
+    <br />
+    <span class="toolTip">
+      <span class="toolText bottom">ToolTip Text</span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. modi corrupti
+      obcaecati iste reiciendis quia dolores placeat beatae error. Amet totam
+      error deleniti magni accusamus aspernatur pariatur qui a.</span
+    >
+    <br />
+    <hr />
+    <br />
+    <span class="toolTip">
+      <span class="toolText left">ToolTip Text</span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. modi corrupti
+      obcaecati iste reiciendis quia dolores placeat beatae error. Amet totam
+      error deleniti magni accusamus aspernatur pariatur qui a.</span
+    >
+  </body>
+</html>

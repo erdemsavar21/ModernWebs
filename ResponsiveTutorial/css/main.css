@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+p {
+  padding: 1.6rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* header */
+
+header {
+  height: 25rem;
+  color: white;
+}
+
+header .content {
+  padding: 3rem;
+}
+
+header .bg-image {
+  background-image: url(/ResponsiveTutorial/images/bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  width: 100%;
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
+}
+
+/* main */
+#section-a .content {
+  padding: 2rem;
+}
+
+#section-b {
+  padding: 2rem;
+}
+
+#section-b ul {
+  list-style: none;
+}
+
+#section-b li {
+  margin-bottom: 1rem;
+}
+
+#section-b .col-content {
+  padding: 2rem;
+}
+
+#section-c .content {
+  padding: 2rem;
+}
+
+#section-d {
+  background: #336ea2;
+  color: white;
+}
+
+#section-d .box {
+  padding: 1rem;
+}
+
+footer {
+  background: #062e51;
+  text-align: center;
+  padding: 2rem;
+}

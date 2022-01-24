@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /*Bu özelligi atamaz isek boxin sabit verdigimiz genisligi padding verdikten sonra artar. Eger boxin genisligi padding artarsa sabit olsun  istiyorsak bunu vermeliyiz*/
+      }
+      /* Tarayici farkliligini engelemek icin default tarayici tarafinda verilen degerli bu sekilde yok edebliliz. Reset css diye adlandirili */
+      #test-link {
+        display: inline-block;
+        /*normalde link inline elementtir size ile oynanamaz fakat display inline-block özelligi atayarak size atayabiliriz*/
+        width: 100px;
+        height: 100px;
+        background-color: rosybrown;
+      }
+
+      .baslik {
+        width: 50%;
+        height: 100px;
+        margin-left: auto; /* Soldan sagdan esit margin vermek icin */
+        margin-right: auto;
+        /* margin: 0 auto; yukari asagi sifir sag sol auto */
+        text-align: center;
+        padding: 20px 50px; /*Yukarai asagi 20 sol ve sagda 50 birakir */
+        box-sizing: border-box; /*Bu özelligi atamaz isek boxin genisligi padding verdikten sonra artar. Eger boxin genisligi padding artarsa sabit olsun  istiyorsak bunu vermeliyiz*/
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="baslik">Deneme</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur in
+      libero debitis voluptas inventore, assumenda nihil maxime molestiae
+      pariatur ipsum eaque sequi atque explicabo! Commodi blanditiis incidunt
+      nam dolores.
+    </p>
+    <h2 id="logo">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+      accusantium illum inventore quisquam, fugiat fuga deserunt ipsa culpa at
+      pariatur quae amet eligendi commodi cupiditate veritatis placeat quam
+      voluptatibus quas possimus dolor dolorum! Sunt necessitatibus sint alias
+      consectetur, voluptatem consequuntur recusandae, officiis ex mollitia
+      voluptatibus nemo minus nulla explicabo unde aspernatur. Quisquam,
+      nostrum. Nobis, vel doloribus repudiandae reiciendis repellat facere nisi
+      expedita aspernatur temporibus. Ea recusandae totam mollitia sit officia
+      neque aspernatur vel itaque minima, necessitatibus maiores, veritatis quo
+      sequi rem corrupti reiciendis aut laudantium provident optio! Voluptatem
+      eaque, consectetur sit saepe aliquam sequi ipsam labore quisquam provident
+      molestias ducimus!
+    </h2>
+    <h3 class="info lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex officia minus
+      omnis et! Quisquam quibusdam quam sit eaque cumque nostrum quis qui fugit?
+      Nemo, dignissimos vitae! Ducimus, ab! Ex, nulla?
+    </h3>
+
+    <ul>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Service</a></li>
+    </ul>
+    <a id="test-link" href="#">home</a>
+  </body>
+</html>
